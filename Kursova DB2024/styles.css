@@ -1,0 +1,95 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.profile-container:hover {
+    background-color: #3a3a3a;
+}
+
+.avatar {
+    margin-right: 20px;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #4CAF50;
+    transition: transform 0.3s;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.bio {
+    margin: 10px 0;
+}
+
+.edit-link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(33% - 10px); /* 3 cards per row */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #4a4a4a;
+}
+
+.card h4 {
+    margin: 0;
+}
+
+.card-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.empty-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+}
